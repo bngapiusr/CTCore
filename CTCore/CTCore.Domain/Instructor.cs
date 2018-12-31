@@ -9,6 +9,7 @@ namespace CTCore.Domain
         public Instructor()
         {
             ScList = new List<StudentClass>();
+            InstructorList = new List<Instructor>();
         }
         public int InstructorId { get; set; }
         [StringLength(30, MinimumLength = 3)]
@@ -19,5 +20,6 @@ namespace CTCore.Domain
         public DateTime CreatedDate { get; set; }
 
         public List<StudentClass>ScList { get; set; }
+        public List<Instructor> InstructorList { get; set; }
     }
 }
