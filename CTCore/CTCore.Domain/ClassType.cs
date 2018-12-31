@@ -7,7 +7,9 @@ namespace CTCore.Domain
     {
         public ClassType()
         {
-            ClassTypeList = new List<ClassType>();
+          //  ClassTypeList = new List<ClassType>();
+            StudentClassesList = new List<StudentClass>();
+
         }
         public int ClassTypeId { get; set; }
         [StringLength(20, MinimumLength = 3)]
@@ -15,7 +17,8 @@ namespace CTCore.Domain
         [StringLength(60, MinimumLength = 3)]
         public string Description { get; set; }
 
-        public List<ClassType> ClassTypeList { get; set; }
+      //  public List<ClassType> ClassTypeList { get; set; }
+        public List<StudentClass> StudentClassesList { get; set; }
 
     }
 }
