@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CTCore.Data
 {
-    public class CTCoreDbContext : DbContext
+    public class CtCoreDbContext : DbContext
     {
         public DbSet<StudentClass> StudentClass { get; set; }
         public DbSet<ClassType> ClassType { get; set; }
